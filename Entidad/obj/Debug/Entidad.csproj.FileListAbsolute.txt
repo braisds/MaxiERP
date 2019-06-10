@@ -1,0 +1,12 @@
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Entidad\bin\Debug\Entidad.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Entidad\bin\Debug\Entidad.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Entidad\obj\Debug\Entidad.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Entidad\obj\Debug\Entidad.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Entidad\bin\Debug\Entidad.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Entidad\bin\Debug\Entidad.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Entidad\obj\Debug\Entidad.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Entidad\obj\Debug\Entidad.pdb

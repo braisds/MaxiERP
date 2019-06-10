@@ -1,0 +1,105 @@
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Negocio.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Datos.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Entidad.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\MySql.Data.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Datos.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Entidad.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\MySql.Data.xml
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.xml
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.Principal.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.textos.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.Productos.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.Cliente.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\MaxiERP\Presentacion\obj\Debug\Presentacion.Venta.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Cliente.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Principal.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Productos.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.textos.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Venta.resources
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Entidad.dll
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Negocio.dll
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Datos.dll
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\MySql.Data.dll
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.dll
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Entidad.pdb
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Datos.pdb
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\MySql.Data.xml
+C:\Users\brais\Desktop\MaxiERP\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.xml
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Entidad.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Negocio.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Datos.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\MySql.Data.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Entidad.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Datos.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\MySql.Data.xml
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.xml
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Principal.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Productos.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.textos.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\brais.dominguez\Desktop\Nueva carpeta\Nuevas plantillas\MaxiERP\MaxiERP\Presentacion\obj\Debug\Presentacion.Clientes.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.Principal.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.Clientes.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.Productos.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Entidad.dll
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Negocio.dll
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Datos.dll
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\MySql.Data.dll
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.dll
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Entidad.pdb
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Datos.pdb
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\MySql.Data.xml
+C:\Users\brais\source\repos\braisds\MaxiERP\Presentacion\bin\Debug\Google.Protobuf.xml
