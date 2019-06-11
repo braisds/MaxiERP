@@ -42,7 +42,7 @@ create table cliente (
 	nombre varchar(100) null,
 	apellidos varchar(100) null,
 	direccion varchar(150) null,
-	dni char(8) null,
+	dni char(9) null,
 	telefono char(12) null,
 	PRIMARY KEY(codigo)
 ) ENGINE=InnoDB;

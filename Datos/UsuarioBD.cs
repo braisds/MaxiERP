@@ -101,7 +101,7 @@ namespace Datos
                 return u;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
