@@ -21,22 +21,16 @@ namespace Datos
             = "INSERT INTO venta_producto (cod_venta, cod_producto, precio_unidad, cantidad) VALUES (@cod_venta, @cod_producto, @precio_unidad, @cantidad)";
 
         /// <summary>
-        /// Consulta actualizar un ventaProducto a la BD
-        /// </summary>
-        private const string ACTUALIZAR_VENTA_PRODUCTO
-            = "UPDATE venta_producto SET cod_venta = @cod_venta, cod_producto = @cod_producto, precio_unidad = @precio_unidad, cantidad = @cantidad WHERE codigo = @codigo";
-
-        /// <summary>
         /// Consulta obtener listado de ventaProducto por codigo de la venta a la BD
         /// </summary>
         private const string OBTENER_LISTADO_VENTA_PRODUCTO
-            = "SELECT codigo, cod_venta, cod_producto, precio_unidad, cantidad FROM venta  WHERE cod_venta = @cod_venta";
+            = "SELECT codigo, cod_venta, cod_producto, precio_unidad, cantidad FROM venta_producto  WHERE cod_venta = @cod_venta";
 
         /// <summary>
         /// Consulta obtener un ventaProducto de la BD
         /// </summary>
         private const string OBTENER_VENTA_PRODUCTO
-            = "SELECT codigo, cod_venta, cod_producto, precio_unidad, cantidad FROM venta WHERE codigo = @codigo";
+            = "SELECT codigo, cod_venta, cod_producto, precio_unidad, cantidad FROM venta_producto WHERE codigo = @codigo";
 
         public VentaProductoBD()
         {
@@ -44,36 +38,41 @@ namespace Datos
         }
 
         /// <summary>
-        /// Metodo para insertar una ventaProducto a la BD
+        /// Metodo para insertar un array ventaProducto a la BD
         /// </summary>
-        /// <param name="ventaProducto"> ventaProducto a insertar</param>
+        /// <param name="venta">objeto Venta con los VentaProducto a insertar</param>
         /// <returns>insertado con exito(true), si hubo error(false)</returns>
-        public bool InsertarVentaProducto(VentaProducto ventaProducto)
+        public bool InsertarVentaProducto(Venta venta)
         {
 
             MySqlCommand cmd = null;
+            MySqlTransaction trans = null;
             try
             {
 
                 conexion.Open();
+                trans = conexion.BeginTransaction();
+                
+                foreach (VentaProducto vp in venta.Productos)
+                {
+                    cmd = new MySqlCommand(INSERTAR_VENTA_PRODUCTO, conexion);
+                    cmd.Parameters.AddWithValue("@cod_venta", venta.Codigo);
+                    cmd.Parameters.AddWithValue("@cod_producto", vp.Producto.Codigo);
+                    cmd.Parameters.AddWithValue("@precio_unidad", vp.PrecioUnidad);
+                    cmd.Parameters.AddWithValue("@cantidad", vp.Cantidad);
 
-                cmd = new MySqlCommand(INSERTAR_VENTA_PRODUCTO, conexion, conexion.BeginTransaction());
+                    cmd.ExecuteNonQuery();
+                }
 
-                cmd.Parameters.AddWithValue("@cod_venta", ventaProducto.Venta.Codigo);
-                cmd.Parameters.AddWithValue("@cod_producto", ventaProducto.Producto.Codigo);
-                cmd.Parameters.AddWithValue("@precio_unidad", ventaProducto.PrecioUnidad);
-                cmd.Parameters.AddWithValue("@cantidad", ventaProducto.Cantidad);
-
-                cmd.ExecuteNonQuery();
-
-                cmd.Transaction.Commit();
+                trans.Commit();
+                
                 return true;
             }
             catch (Exception)
             {
-                if (cmd.Transaction != null)
+                if (trans != null)
                 {
-                    cmd.Transaction.Rollback();
+                    trans.Rollback();
 
                 }
                 return false;
@@ -88,52 +87,6 @@ namespace Datos
 
         }
 
-        /// <summary>
-        /// Metodo para actualizar una ventaProducto a la BD
-        /// </summary>
-        /// <param name="ventaProducto"> ventaProducto a actualizar</param>
-        /// <returns>actualizado con exito(true), si hubo error(false)</returns>
-        public bool ActualizarVentaProducto(VentaProducto ventaProducto)
-        {
-
-            MySqlCommand cmd = null;
-            try
-            {
-
-                conexion.Open();
-
-                cmd = new MySqlCommand(ACTUALIZAR_VENTA_PRODUCTO, conexion, conexion.BeginTransaction());
-
-                cmd.Parameters.AddWithValue("@cod_venta", ventaProducto.Venta.Codigo);
-                cmd.Parameters.AddWithValue("@cod_producto", ventaProducto.Producto.Codigo);
-                cmd.Parameters.AddWithValue("@precio_unidad", ventaProducto.PrecioUnidad);
-                cmd.Parameters.AddWithValue("@cantidad", ventaProducto.Cantidad);
-
-                cmd.Parameters.AddWithValue("@codigo", ventaProducto.Codigo);
-
-                cmd.ExecuteNonQuery();
-
-                cmd.Transaction.Commit();
-                return true;
-            }
-            catch (Exception)
-            {
-                if (cmd.Transaction != null)
-                {
-                    cmd.Transaction.Rollback();
-
-                }
-                return false;
-            }
-            finally
-            {
-                if (conexion != null)
-                {
-                    conexion.Close();
-                }
-            }
-
-        }
 
         /// <summary>
         /// Metodo para obtener listado de ventaProducto por codigo de la venta a la BD
@@ -161,10 +114,16 @@ namespace Datos
                 {
                     VentaProducto vp = new VentaProducto();
                     vp.Codigo = rs.GetInt32("codigo");
-                    vp.Venta.Codigo = rs.GetInt32("cod_venta");
-                    vp.Producto.Codigo = rs.GetInt32("cod_producto");
                     vp.PrecioUnidad = rs.GetDouble("precio_unidad");
                     vp.Cantidad = rs.GetInt32("cantidad");
+
+                    Venta v = new Venta();
+                    v.Codigo = rs.GetInt32("cod_venta");
+                    vp.Venta = v;
+
+                    Producto p = new Producto();
+                    p.Codigo = rs.GetInt32("cod_producto");
+                    vp.Producto = p;
 
                     lista.Add(vp);
 
@@ -194,57 +153,6 @@ namespace Datos
 
         }
 
-        /// <summary>
-        /// Metodo obtener ventaProducto
-        /// </summary>
-        /// <param name="codigo">codigo de la ventaProducto</param>
-        /// <returns>objeto VentaProducto</returns>
-        public VentaProducto ObtenerVentaProducto(int codigo)
-        {
-
-            MySqlCommand cmd = null;
-            VentaProducto ventaProducto = null;
-            try
-            {
-
-                conexion.Open();
-
-                cmd = new MySqlCommand(OBTENER_VENTA_PRODUCTO, conexion);
-
-                cmd.Parameters.AddWithValue("@codigo", codigo);
-
-                MySqlDataReader rs = cmd.ExecuteReader();
-
-                if (rs.HasRows)
-                {
-                    rs.Read();
-
-                    ventaProducto = new VentaProducto();
-                    ventaProducto.Codigo = rs.GetInt32("codigo");
-                    ventaProducto.Venta.Codigo = rs.GetInt32("cod_venta");
-                    ventaProducto.Producto.Codigo = rs.GetInt32("cod_producto");
-                    ventaProducto.PrecioUnidad = rs.GetDouble("precio_unidad");
-                    ventaProducto.Cantidad = rs.GetInt32("cantidad");
-                }
-
-                return ventaProducto;
-
-            }
-            catch (Exception)
-            {
-                return null;
-
-            }
-            finally
-            {
-                if (conexion != null)
-                {
-                    conexion.Close();
-                }
-
-            }
-
-        }
 
     }
 }

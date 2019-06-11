@@ -13,5 +13,6 @@ namespace Entidad
         public string NumVenta { set; get; }
         public DateTime Fecha { set; get; }
         public double Iva { set; get; }
+        public VentaProducto[] Productos { set; get; }
     }
 }

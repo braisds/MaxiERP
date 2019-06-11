@@ -118,5 +118,16 @@ namespace Presentacion
             Clientes formClientes = new Clientes();
             formClientes.ShowDialog();
         }
+
+        /// <summary>
+        /// Evento abrir formulario ventas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            Ventas formVentas = new Ventas();
+            formVentas.ShowDialog();
+        }
     }
 }

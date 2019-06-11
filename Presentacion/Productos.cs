@@ -20,9 +20,29 @@ namespace Presentacion
         private TipoProducto[] cbTiposProducto = null;//combo tipos
         private TipoProducto[] tiposProducto = null;//tabla de tipos
 
+        private bool devolverProducto;//Para añadirlo a una venta
+        public Producto ProductoDevolver { set; get; }//Para añadirlo a una venta
+
+        /// <summary>
+        /// Constructor productos
+        /// </summary>
         public Productos()
         {
             InitializeComponent();
+
+            productoN = new ProductoN();
+            tipoProductoN = new TipoProductoN();
+        }
+
+        /// <summary>
+        /// Constructor para abrirlo desde ventas para selecionar el producto
+        /// </summary>
+        /// <param name="devolverProducto">true para decir que viene de ventas</param>
+        public Productos(bool devolverProducto)
+        {
+            InitializeComponent();
+
+            this.devolverProducto = devolverProducto;
 
             productoN = new ProductoN();
             tipoProductoN = new TipoProductoN();
@@ -41,6 +61,16 @@ namespace Presentacion
             CargarListado();
             CargarListadoTipos();
             CargarCBTipos();
+
+            if (devolverProducto)
+            {
+                btnAgregarVenta.Visible = true;
+                if (productos != null && productos.Length >0)
+                {
+                    btnAgregarVenta.Enabled = true;
+                }
+            }
+
 
         }
 
@@ -88,6 +118,10 @@ namespace Presentacion
                 txtMarca.Text = productos[tblProductos.CurrentRow.Index].Marca;
 
                 cbTipo.SelectedValue = productos[tblProductos.CurrentRow.Index].TipoProducto.Codigo;
+            }
+            else
+            {
+                ModoNuevo();
             }
         }
 
@@ -207,6 +241,11 @@ namespace Presentacion
             btnEliminar.Enabled = true;
 
             btnGuardarNuevo.Enabled = false;
+
+            if (devolverProducto)
+            {
+                btnAgregarVenta.Enabled = true;
+            }
         }
 
         /// <summary>
@@ -220,6 +259,11 @@ namespace Presentacion
             btnEliminar.Enabled = false;
 
             btnGuardarNuevo.Enabled = true;
+
+            if (devolverProducto)
+            {
+                btnAgregarVenta.Enabled = false;
+            }
         }
 
         /// <summary>
@@ -407,6 +451,10 @@ namespace Presentacion
 
                 txtTNombre.Text = tiposProducto[tblTipos.CurrentRow.Index].Nombre;
             }
+            else
+            {
+                ModoTipoNuevo();
+            }
         }
 
         /// <summary>
@@ -555,6 +603,17 @@ namespace Presentacion
             CargarTipoProducto();
         }
 
-       
+        /// <summary>
+        /// Devuelve el producto selecionado para añadirlo a la nueva venta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAgregarVenta_Click(object sender, EventArgs e)
+        {
+            if (tblProductos.CurrentRow != null)
+            {
+                ProductoDevolver = productos[tblProductos.CurrentRow.Index];
+            }
+        }
     }
 }

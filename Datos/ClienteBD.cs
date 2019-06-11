@@ -57,7 +57,7 @@ namespace Datos
         }
 
         /// <summary>
-        /// Metodo para insertar un usuario a la BD
+        /// Metodo para insertar un cliente a la BD
         /// </summary>
         /// <param name="cliente"> cliente a insertar</param>
         /// <returns>insertado con exito(true), si hubo error(false)</returns>
@@ -103,7 +103,7 @@ namespace Datos
         }
 
         /// <summary>
-        /// Metodo para actualizar un usuario de la BD
+        /// Metodo para actualizar un cliente de la BD
         /// </summary>
         /// <param name="cliente">cliente a actualizar</param>
         /// <returns>actualizado con exito(true), si hubo error(false)</returns>

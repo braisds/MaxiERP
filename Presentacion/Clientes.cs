@@ -17,10 +17,28 @@ namespace Presentacion
         private ClienteN clienteN;
         private Cliente[] clientes;
 
+
+        private bool devolverCliente;//Para añadirlo a una venta
+        public Cliente clienteDevolver;//Para añadirlo a una venta
+
+        /// <summary>
+        /// Constructor clientes
+        /// </summary>
         public Clientes()
         {
             InitializeComponent();
 
+            clienteN = new ClienteN();
+        }
+
+        /// <summary>
+        /// Constructor para abrirlo desde ventas para selecionar el cliente
+        /// </summary>
+        /// <param name="obtener">true para decir que viene de ventas</param>
+        public Clientes(bool devolverCliente)
+        {
+            InitializeComponent();
+            this.devolverCliente = devolverCliente;
             clienteN = new ClienteN();
         }
 
@@ -34,6 +52,15 @@ namespace Presentacion
             clientes = clienteN.ListadoClientes();
 
             CargarListado();
+
+            if (devolverCliente)
+            {
+                btnAgregarVenta.Visible = true;
+                if (clientes != null && clientes.Length > 0)
+                {
+                    btnAgregarVenta.Enabled = true;
+                }
+            }
 
         }
 
@@ -52,6 +79,10 @@ namespace Presentacion
                 txtDireccion.Text = clientes[tblClientes.CurrentRow.Index].Direccion;
                 txtDni.Text = clientes[tblClientes.CurrentRow.Index].Dni;
                 txtTelefono.Text = clientes[tblClientes.CurrentRow.Index].Telefono;
+            }
+            else
+            {
+                ModoNuevo();
             }
         }
 
@@ -154,6 +185,11 @@ namespace Presentacion
             btnEliminar.Enabled = true;
 
             btnGuardarNuevo.Enabled = false;
+
+            if (devolverCliente)
+            {
+                btnAgregarVenta.Enabled = true;
+            }
         }
 
         /// <summary>
@@ -167,6 +203,11 @@ namespace Presentacion
             btnEliminar.Enabled = false;
 
             btnGuardarNuevo.Enabled = true;
+
+            if (devolverCliente)
+            {
+                btnAgregarVenta.Enabled = false;
+            }
         }
 
         /// <summary>
@@ -259,12 +300,23 @@ namespace Presentacion
             }
             else
             {
-                MessageBox.Show("Error al eliminar el cliente",
+                MessageBox.Show("Error al eliminar el cliente. Nota: no se puede eliminar un cliente si esta vinculado a alguna venta.",
                     "Error eliminar cliente", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-
-       
+        /// <summary>
+        /// Devuelve el cliente selecionado para añadirlo a la nueva venta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAgregarVenta_Click(object sender, EventArgs e)
+        {
+            if (tblClientes.CurrentRow != null)
+            {
+                clienteDevolver = clientes[tblClientes.CurrentRow.Index];
+            }
+            
+        }
     }
 }

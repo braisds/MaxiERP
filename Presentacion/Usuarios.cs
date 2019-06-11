@@ -55,6 +55,10 @@ namespace Presentacion
                 txtTelefono.Text = usuarios[tblUsuarios.CurrentRow.Index].Telefono;
                 chkAdmin.Checked = usuarios[tblUsuarios.CurrentRow.Index].Admin;
             }
+            else
+            {
+                ModoNuevo();
+            }
         }
 
         /// <summary>

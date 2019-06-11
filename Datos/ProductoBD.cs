@@ -52,6 +52,8 @@ namespace Datos
         private const string ELIMINAR_PRODUCTO
             = "DELETE FROM producto WHERE codigo = @codigo";
 
+        private const string ACTUALIZAR_STOCK
+            = "UPDATE producto SET stock = @stock where codigo = @codigo";
 
         public ProductoBD()
         {
@@ -383,6 +385,54 @@ namespace Datos
                 if (cmd.Transaction != null)
                 {
                     cmd.Transaction.Rollback();
+
+                }
+                return false;
+            }
+            finally
+            {
+                if (conexion != null)
+                {
+                    conexion.Close();
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// Metodo para actualizar stock de un producto de la bd
+        /// </summary>
+        /// <param name="producto">array Producto</param>
+        /// <returns>actualizado con exito(true), si hubo error(false)</returns>
+        public bool ActualizarStock(Producto[] producto)
+        {
+
+            MySqlCommand cmd = null;
+            MySqlTransaction trans = null;
+            try
+            {
+
+                conexion.Open();
+                trans = conexion.BeginTransaction();
+
+                foreach (Producto p in producto)
+                {
+                    cmd = new MySqlCommand(ACTUALIZAR_STOCK, conexion);
+                    cmd.Parameters.AddWithValue("@stock", p.Stock);
+                    cmd.Parameters.AddWithValue("@codigo", p.Codigo);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                trans.Commit();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                if (trans != null)
+                {
+                    trans.Rollback();
 
                 }
                 return false;

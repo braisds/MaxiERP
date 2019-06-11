@@ -50,7 +50,7 @@ create table cliente (
 create table venta (
 	codigo int not null AUTO_INCREMENT,
 	cod_cliente int null,
-	numVenta varchar(50) null,
+	num_venta varchar(50) null,
 	fecha DATETIME null,
 	iva double null,
 	PRIMARY KEY(codigo),
@@ -66,7 +66,7 @@ create table venta_producto (
 	precio_unidad double null,
 	cantidad int null,
 	PRIMARY KEY(codigo),
-	Foreign key(cod_venta) references cliente(codigo)
+	Foreign key(cod_venta) references venta(codigo)
 	ON DELETE RESTRICT
 	ON	UPDATE RESTRICT,
 	Foreign key(cod_producto) references producto(codigo)
@@ -88,18 +88,14 @@ INSERT INTO usuario (nombre, login, pass, apellidos, direccion, dni, telefono, a
 			("Paco", "paquito", "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",  "Chocolatero", "c/ principe 17", "36174071Q", "698754859", 0);/* pass:  admin*/	
 
 INSERT INTO cliente (nombre, apellidos, direccion, dni, telefono) VALUES 
-			("Colegio Vivas", null, "c/ principe 17", "36174071Q", "986258458"),
+			("Colegio Vivas", "", "c/ principe 17", "36174071Q", "986258458"),
 			("Paco", "López", "c/ principe 17", "36174071Q", "698745896");
 			
-INSERT INTO venta (cod_cliente, numVenta, fecha, iva) VALUES 
-			(1, "V-190605-0001", now(),0.21),
-			(2, "V-190605-0002", now(),0.21);
+INSERT INTO venta (cod_cliente, num_venta, fecha, iva) VALUES 
+			(1, "V-20190605-0001", now(),0.21),
+			(2, "V-20190605-0002", now(),0.21);
 			
 INSERT INTO venta_producto (cod_venta, cod_producto, precio_unidad, cantidad) VALUES 
 			(1, 1, 1050.5, 1),
 			(1, 3, 50, 1),
 			(2, 2, 600, 3);
-			
-
-
-
